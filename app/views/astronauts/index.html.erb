@@ -3,6 +3,10 @@
   <%=a.name%>
   <%=a.age%>
   <%=a.job%>
+  <p> list of missions: </p>
+  <%a.missions_in_alphabetical_order.each do |m|%>
+    <%= m.title%>
+  <%end%>
   <li>
 <%end%>
 <p> Average Age: <%=@average_age%></p>
